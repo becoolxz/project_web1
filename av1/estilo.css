@@ -1,0 +1,288 @@
+:root {
+    --colorbase1: #c4caaa;
+    --colorbase2: #333;
+    --colorbase3: #e3a459;
+    --spacing: 30px;
+}
+
+body {
+    background: var(--colorbase2);
+    max-width: 600px;
+    margin: auto;
+}
+
+.barra-topo {
+    background-color: var(--colorbase1);
+    padding: var(--spacing);
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra-topo span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.barra-topo a {
+    color: #7e8465;
+}
+
+.cabecalho {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing);
+}
+
+.cabecalho img {
+    width: 80px;
+    height: 80px;
+}
+
+.cabecalho a {
+    color: var(--colorbase2);
+}
+
+.banner img {
+    width: 100%;
+    padding: 0%;
+}
+
+.banner {
+    color: white;
+}
+
+.banner div {
+    background: var(--colorbase3);
+    padding: var(--spacing);
+}
+
+.banner h1 {
+    margin-top: 0px;
+}
+
+.banner a {
+    color: var(--colorbase2);
+}
+
+.duascolunas {
+    display: flex;
+}
+
+.duascolunas div {
+    background: white;
+    padding: var(--spacing);
+    margin: 10px 0;
+}
+
+.duascolunas div:first-child {
+    margin-right: 5px;
+ }
+
+ .duascolunas div:last-child {
+    margin-left: 5px;
+ }
+
+.duascolunas h2 {
+    color: var(--colorbase2);
+    margin-top: 0;
+}
+
+.duascolunas p {
+    color: #aaaaaa;
+}
+
+.botao {
+    color: white;
+    background: var(--colorbase1);
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: all 1s;
+}
+
+.botao:hover {
+    background: var(--colorbase2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imagemtexto {
+    display: flex;
+}
+
+.imagemtexto .foto, .imagemtexto .texto {
+    width: 50%;
+}
+
+.imagemtexto .foto, .imagemtexto .texto {
+    background-image: url("../av1/imagens/medImg.jpg");
+    background-size: cover;
+    min-height: 200px;
+}
+
+.imagemtexto .texto {
+    background: white;
+    padding: var(--spacing);
+    box-sizing: border-box;
+}
+
+.imagemtexto .button {
+    background: #e2a459;
+}
+
+
+.faq {
+    text-align: center;
+    background-color: var(--colorbase1);
+    padding: var(--spacing);
+  }
+  
+  .faq h2 {
+    font-family: "Times New Roman";
+    padding: 0 25%;
+    margin: auto;
+    position: relative;
+    margin-top: 0;
+  }
+  
+  .faq h2:before, .faq h2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25%;
+    height: 2px;
+    background-color: #a9b18a;
+    top: 50%;
+  }
+  
+  .faq h2:before {
+    left: 0;
+  }
+  
+  .faq h2:after {
+    right: 0;
+  }
+  
+  .faq .botao {
+    background-color: #7e8465;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .blog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: var(--spacing);
+    margin: 10px 0;
+  }
+  
+  .blog h2 {
+    font-family: "Times New Roman";
+    color: var(--colorbase2);
+  }
+  
+  .blog p {
+    color: rgb(184, 180, 180);
+    width: 80%;
+  }
+  
+  .blog img {
+    width: 130px;
+  }
+  
+  .blog .botao {
+    color: #7e8465;
+    background-color: white;
+    padding: 0;
+  }
+
+  .footer {
+    text-align: justify;
+    padding: 45px 0;
+  }
+
+  .footer h2 {
+    font-family: "Times New Roman";
+    padding: 0 auto;
+    margin: auto;
+    position: relative;
+    margin-top: 0;
+}
+
+  .footer h2:before, .footer h2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(184, 180, 180);
+    top: 50%;
+  }
+
+  .footer {
+    color: rgb(184, 180, 180);
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-informations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-informations .contatos {
+    display: inline;
+    text-align: left;
+    margin: 0 8%;
+    font-size: 15px;
+}
+
+.footer-informations .redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-informations .contatos, .footer-informations .redes-sociais {
+    width: 50%;
+}
+
+.footer .contatos a {
+    color: rgb(184, 180, 180);
+}
+
+.footer-informations img {
+    max-height: 70px;
+}
+
+  @media(max-width: 500px) {
+
+    .duascolunas {
+      flex-direction: column;
+    }
+  
+    .duascolunas div {
+      margin: 10px 0 !important;
+    }
+  
+    .imagemtexto {
+      flex-direction: column;
+    }
+  
+    .imagemtexto .foto, .imagemtexto .texto {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .imagemtexto .foto {
+      min-height: 300px;
+    }
+
+    .footer-informations img {
+        max-height: 50px;
+      }
+    
+}
